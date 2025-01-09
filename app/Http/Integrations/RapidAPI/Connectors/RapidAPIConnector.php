@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Connectors;
+namespace App\Http\Integrations\RapidAPI\Connectors;
 
 use Fansipan\Contracts\ConnectorInterface;
 use Fansipan\Traits\ConnectorTrait;

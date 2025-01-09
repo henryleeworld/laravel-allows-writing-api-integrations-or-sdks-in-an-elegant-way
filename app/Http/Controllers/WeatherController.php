@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Connectors\RapidAPIConnector;
-use App\Requests\GetCurrentWeatherRequest;
+use App\Http\Integrations\RapidAPI\Connectors\RapidAPIConnector;
+use App\Http\Integrations\RapidAPI\Requests\GetCurrentWeatherRequest;
 use GuzzleHttp\Client;
 
 class WeatherController extends Controller 
@@ -12,6 +12,6 @@ class WeatherController extends Controller
     {
         $connector = (new RapidAPIConnector())->withClient(new Client());
         $response = $connector->send(new GetCurrentWeatherRequest());
-        echo '即時天氣查詢：' . $response->body() . PHP_EOL;
+        echo __('Real-time weather query:') . $response->body() . PHP_EOL;
     }
 }
