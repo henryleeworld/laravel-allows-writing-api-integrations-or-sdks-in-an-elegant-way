@@ -1,4 +1,4 @@
-# Laravel 11 允許以優雅的方式編寫應用程式介面整合或軟體開發套件
+# Laravel 12 允許以優雅的方式編寫應用程式介面整合或軟體開發套件
 
 引入 fansipan 的 fansipan 套件來擴增允許以優雅的方式編寫應用程式介面整合或軟體開發套件，編寫應用程式介面整合可能相當耗時，當找到要使用的應用程式介面用戶端後，將面臨需要記住不少的設定，如果不複製和貼上就很難重複請求，以致不時會一遍又一遍地編寫相同的範本程式碼。
 
@@ -16,11 +16,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/weather/` 來進行即時天氣查詢。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/KdCivTX.png)
+![](https://i.imgur.com/p1Q59CQ.png)
 > 發出資料或服務要求
